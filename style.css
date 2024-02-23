@@ -1,0 +1,215 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+html
+{
+    height: 100%;
+    scroll-behavior: auto;
+}
+
+body
+{
+    height: 100vh;
+    background-color: #0A2463;
+}
+
+.entire-section
+{
+    padding: 1rem 0;
+    position: relative;
+    background-color: #0A2463;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container
+{
+    margin-top: 10rem;
+    padding: 1rem;
+    width: 80dvw;
+    min-height: 50dvh;
+    max-height: max-content;
+    background-color: #1E1B18;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.container
+{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#text
+{
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 1rem;
+    width: 85%;
+    font-size: 1.3rem;
+    background-color: #FFFAFF;
+}
+
+#text::placeholder
+{
+    opacity: 1;
+}
+
+.button
+{
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1rem;
+    width: 15%;
+    font-size: 2rem;
+    background-color: #D8315B;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.button:hover
+{
+    opacity: 0.9;
+}
+
+.button:active
+{
+    opacity: 0.8;
+}
+
+#items-holder
+{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse; 
+}
+
+.item
+{
+    padding: 1rem 0.2rem;
+    padding: 1rem;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item-p
+{
+    padding: 1rem;
+    height: max-content;
+    width: 85%;
+    font-size: 1.2rem;
+    background-color: #FFFAFF;
+    color: #1E1B18;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+p
+{
+    transition: all 0.25s;
+}
+
+.span 
+{
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    transition: all 0.255s ease-in-out;
+    border: 1px solid #D8315B;
+}
+
+.span:hover
+{
+    cursor: pointer;
+    background-color: #D8315B;
+}
+
+#buttonDelete
+{
+    border: none;
+    width: 15%;
+    font-size: 1.5rem;
+    background-color: #3E92CC;
+    cursor: pointer;
+}
+
+#buttonDelete:hover
+{
+    opacity: 0.9;
+}
+
+#buttonDelete:active
+{
+    opacity: 0.8;
+}
+
+@media screen and (width < 600px)
+{
+    .app-container
+    {
+        width: 90dvw;
+    }
+
+    #text
+    {
+        padding: 0.5rem;
+        width: 85%;
+        font-size: 1rem;
+    }
+
+    .button
+    {
+        padding: 0.5rem;
+        width: 15%;
+        font-size: 1.2rem;
+    }
+
+    #buttonDelete
+    {
+        width: 15%;
+        font-size: 1.2rem;
+    }
+
+    .item-p
+    {
+        font-size: 0.8rem;
+        width:  85%;
+        height: max-content;
+        overflow: hidden;
+        word-break: break-all;
+        padding: 0.4rem;
+    }
+
+    .span 
+    {
+        padding: 0.25rem;
+        margin-right: 0.4rem;
+        border-radius: 2.5px;
+        transition: all 0.255s ease-in-out;
+    }
+}
